@@ -2,6 +2,7 @@
 
 ### Description
 This document contains the guidelines and best practices for the front-end web development team at [Narrada Communications](http://narrada.com). Each item here represents either:
+
 1. A reminder to follow existing standards or industry conventions.
 2. Guidance on what constitutes professional patterns and organization.
 3. A decision we've made favoring one method over its alternatives.
@@ -13,6 +14,7 @@ These guidelines have been compiled looking at various previously written guidel
 
 ### Goals
 Our motivations in creating this document are to:
+
 1. Foster code consistency across our projects.
 2. Facilitate ease of maintenance.
 3. Ensure we create professional quality web sites.
