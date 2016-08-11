@@ -39,7 +39,7 @@ To contribute to this project please follow this step:
 3. [Base Frameworks](#base-frameworks)
 4. [HTML Markup](#html-markup)
     1. [Document Type](#document-type)
-    2. [Meta Tag](#meta-tag)
+    2. [Open Graph](#open-graph)
     3. [General HTML Markup](#general-html-markup)
     4. [Performance](#perfomance)
     5. [HTML Comments](#html-comments)
@@ -96,7 +96,24 @@ Favor UTF-8 over any other character encoding.
 <meta charset=utf-8>
 ```
 
-### Meta Tag
+### Open Graph
+The Open Graph protocol enables any web page to become a rich object in a social graph. For instance, this is used on Facebook to allow any web page to have the same functionality as any other object on Facebook.
+To turn your web pages into graph objects, you need to add basic metadata to your page. We've based the initial version of the protocol on RDFa which means that you'll place additional `<meta>` tags in the `<head>` of your web page. The four required properties for every page are:
+
+- og:title - The title of your object as it should appear within the graph, e.g., "The Rock".
+- og:type - The type of your object, e.g., "video.movie". Depending on the type you specify, other properties may also be required.
+- og:image - An image URL which should represent your object within the graph.
+- og:url - The canonical URL of your object that will be used as its permanent ID in the graph, e.g., "http://www.imdb.com/title/tt0117500/".
+
+Twitter has its own `<meta>` tags that are similar to the Open Graph protocol, but uses the "twitter" prefix instead of "og". As with Facebook, only a few are required. The type of display format we're requesting from Twitter is also specified:
+
+```html
+<meta name="twitter:title" content="your title goes here">
+<meta name="twitter:description" content="your description here">
+<meta name="twitter:image" content=" http://url.com/image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+```
+
 
 ### General HTML Markup
 
