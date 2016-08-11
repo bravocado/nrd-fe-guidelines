@@ -72,6 +72,13 @@ We encourage readability over file-size when it comes to maintaining existing fi
 We should use server-side or build processes to automatically minify and gzip all static client-side files, such as CSS and JavaScript.
 
 ## Browser Support
+- IE9+
+- Google Chrome 29+
+- Firefox 47+
+- Safari 9.1+
+- Opera 39+
+- Android Browser 4.4+
+- Chrome for Android 51+
 
 ## Base Frameworks
 
