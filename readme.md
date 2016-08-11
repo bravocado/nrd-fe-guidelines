@@ -87,6 +87,12 @@ We encourage you using [Bootstrap](getbootstrap.com). Since we have tight deadli
 Keep your code terse. Forget about your old XHTML habits.
 
 ```html
+<!doctype html>
+```
+
+Favor UTF-8 over any other character encoding.
+
+```html
 <meta charset=utf-8>
 ```
 
