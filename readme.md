@@ -57,3 +57,46 @@ To contribute to this project please follow this step:
 8. [External Tools](#external-tools)
 
 ---
+
+## General Guidelines
+
+1. All front-end code should display clear separation of presentation, content, and behaviour.
+2. Markup should be well formed, semantically correct and generally valid.
+3. Gracefully degrade functionality when not present (e.g GPS, box-shadow, forms etc).
+
+### Indentation
+For all languages, indent your code with spaces. The default tab size should be set as 4.
+
+### Readability and Compression
+We encourage readability over file-size when it comes to maintaining existing files. Plenty of white-space is encouraged, along with ASCII art, where appropriate. There is no need for any developer to purposefully compress HTML or CSS, nor obfuscate JavaScript.
+We should use server-side or build processes to automatically minify and gzip all static client-side files, such as CSS and JavaScript.
+
+## Browser Support
+
+## Base Frameworks
+
+### Document Type
+
+### Meta Tag
+
+### General HTML Markup
+
+### Performance
+
+### General CSS Principles
+
+### Naming Convention
+
+### CSS Comments
+
+### General JS Principles
+
+### Debuging
+
+### JS Comments
+
+### Using Git
+
+### Readme File
+
+### External Tools
