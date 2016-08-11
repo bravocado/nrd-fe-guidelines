@@ -81,8 +81,14 @@ We should use server-side or build processes to automatically minify and gzip al
 - Chrome for Android 51+
 
 ## Base Frameworks
+We encourage you using [Bootstrap](getbootstrap.com). Since we have tight deadlines, we need a fast and robust front-end frameworks and also have a big community in case you need a hint when debugging.
 
 ### Document Type
+Keep your code terse. Forget about your old XHTML habits.
+
+```html
+<meta charset=utf-8>
+```
 
 ### Meta Tag
 
