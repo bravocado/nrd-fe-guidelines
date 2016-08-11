@@ -13,7 +13,7 @@ What this document is not is a series of explanations as to how front-end techno
 Our motivations in creating this document are to:
 1. Foster code consistency across our projects.
 2. Facilitate ease of maintenance.
-3. Ensure we create professional quality Web sites.
+3. Ensure we create professional quality web sites.
 4. Guide staff on-boarding or educate new developers.
 
 This document is not intended to replace common sense, conventions requested by particular clients, teams, or prevent expressive or creative solutions to problems. Team or project-specific agreements or client requests will always supersede this document's content.
