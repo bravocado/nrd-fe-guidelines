@@ -90,7 +90,7 @@ Keep your code terse. Forget about your old XHTML habits.
 <!doctype html>
 ```
 
-Favor UTF-8 over any other character encoding.
+All markup should be delivered as UTF-8, as it's the most friendly for internationalization. It should be designated in both the HTTP header and the head of the document.
 
 ```html
 <meta charset=utf-8>
@@ -116,6 +116,20 @@ Twitter has its own `<meta>` tags that are similar to the Open Graph protocol, b
 
 
 ### General HTML Markup
+The following are general guidelines for structuring your HTML markup. Authors are reminded to always use markup which represents the semantics of the content in the document being created.
+
+- Use `<p>` elements for paragraph delimiters as opposed to multiple `<br />` tags.
+- Items in list form should always be housed in a `<ul>`, `<ol>`, or `<dl>`, never a set of `<div>`s or `<p>`s.
+- Make use of `<thead>`, `<tbody>`, and `<th>` tags (and Scope attribute) when appropriate.
+- Make use of `<dl>` (definition lists) and `<blockquote>`, when appropriate.
+- Use `<label>` fields to label each form field. The `for` attribute should associate itself with the input field, so users can click the labels and obtain focus.
+- Tables shouldn't ever be used for page layout – only for tabular data.
+
+While the HTML5 specification defines quotes around attributes as optional for consistency with attributes that accept whitespace, all attributes should be quoted.
+
+```html
+<a href="mylink.html" title="My Link Title" data-attribute="32">This is my Link</a>
+```
 
 ### Performance
 
