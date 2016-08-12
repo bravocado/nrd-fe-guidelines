@@ -9,7 +9,7 @@ This document contains the guidelines and best practices for the front-end web d
 
 What this document is not is a series of explanations as to how front-end technologies work; a basic familiarity is assumed. It also does not provide evaluations of the pros and cons of various alternatives unless there is common confusion about which option is best.
 
-These guidelines have been compiled looking at various previously written guidelines in some sections been directly quoted.
+These guidelines have been compiled looking at various previously written guidelines and in some sections been directly quoted.
 
 
 ### Goals
