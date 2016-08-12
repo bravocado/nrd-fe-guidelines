@@ -146,9 +146,57 @@ Unless there's a valid reason for loading your scripts before your content, don'
 
 ### General CSS Principles
 
+- Every time you write inline styles in your markup, a front-end developer somewhere dies - whether it's in a style tag or directly in the markup. Don't do it.
+- Add CSS through external files, minimizing the number of files, if possible. CSS should always be included in the `<head>` of the document.
+- Use the `<link>` tag to include, never `@import`.
+- All CSS rules should have a space after the selector colon and a trailing semi-colon.
+- Don't over qualify class or ID selectors. Leads to specificity issues further down the line.
+- ID's are an unique identifier. Each element can have only one ID. Each page can have only one element with that ID.
+- Classes are **NOT** unique. Any styling information that needs to be applied to multiple objects on a page should be done with a class.
+- For each level of markup nesting, indent your CSS to match. For example:
+
+```css
+nav {}
+    nav li {}
+        nav li a {}
+
+.content {}
+    .content p {}
+```
+
 ### Naming Convention
 
+
 ### CSS Comments
+We encourage liberal use of whitespace, comments, and descriptive variable names as appropriate for writing easy-to-read code. You will use automated server-side or other build processes to optimize files (eg: Gulp, Grunt or CodeKit). The ability for another developer to read the code is paramount above other concerns, especially if optimization can be handled another way.
+
+Use block and describe your stylesheet
+
+```css
+/**
+ *
+ * Block comment
+ *
+ */
+```
+
+Use section comment for each section
+
+```css
+/*=============================================
+=            Section comment block            =
+=============================================*/
+
+...
+
+/*=====  End of Section comment block  ======*/
+```
+
+Use sub-section to identify a small part of your stylesheet
+
+```css
+/*----------  Subsection comment block  ----------*/
+```
 
 ### General JS Principles
 
