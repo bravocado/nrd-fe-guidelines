@@ -50,7 +50,7 @@ To contribute to this project please follow this step:
 6. [JavaScript](#javascript)
     1. [General JS Principles](#general-js-principles)
     2. [JS Structure](#js-structure)
-    3. [Debuging](#debuging)
+    3. [Debugging](#debugging)
     3. [JS Comments](#js-comments)
 7. [Code Distribution](#code-distribution)
     1. [Readme File](#readme-file)
@@ -228,7 +228,7 @@ $(function(){
 
 ```
 
-### Debuging
+### Debugging
 
 - We encourage you to add a debug flags when you on development phase.
 - Use `console.log()` not `alert()`.
