@@ -29,6 +29,24 @@ To contribute to this project please follow this step:
 - create your own branch with the feature that you want to add `user/some-feature`
 - submit your pull request to draft branch
 
+### Issue
+To submit an issue please follow this template:
+
+```
+## Expected Behavior
+...
+
+## Actual Behavior
+...
+
+## Steps to Reproduce
+...
+
+## Other Information
+... (such as reference or OS information)
+
+```
+
 ---
 
 ## Contents
@@ -235,8 +253,20 @@ $(function(){
 
 ### JS Comments
 
+Comment JavaScript code thoroughly and consider using a pattern such as those described by [JSDocs](http://usejsdoc.org/) so that documentation may be generated automatically.
+
 ### Readme File
+
+You have to put readme file at the root of your project folder. Use [this](readme_example.md) as your starter.
 
 ### Using Git
 
+Since we have a private repository, it's a must to use Git for every front-end project.
+
 ### External Tools
+
+- [Git](https://git-scm.com/)
+- [Gulp](http://gulpjs.com/)
+- [Grunt](http://gruntjs.com/)
+- [CodeKit](https://incident57.com/codekit/)
+- [Sublime Text](https://www.sublimetext.com/)
