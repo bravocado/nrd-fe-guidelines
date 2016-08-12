@@ -209,7 +209,7 @@ Use sub-section to identify a small part of your stylesheet
 - Constants or configuration variables should be at the start of a class and written in CAPS.
 
 ### JS Structure
-When you're using jQuery as your plugin, please follow this structure:
+Please follow this structure:
 
 ```javascript
 // good
