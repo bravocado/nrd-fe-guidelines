@@ -49,7 +49,8 @@ To contribute to this project please follow this step:
     3. [CSS Comments](#css-comments)
 6. [JavaScript](#javascript)
     1. [General JS Principles](#general-js-principles)
-    2. [Debuging](#debuging)
+    2. [JS Structure](#js-structure)
+    3. [Debuging](#debuging)
     3. [JS Comments](#js-comments)
 7. [Code Distribution](#code-distribution)
     1. [Using Git](#using-git)
@@ -199,6 +200,33 @@ Use sub-section to identify a small part of your stylesheet
 ```
 
 ### General JS Principles
+
+- Use external JavaScript files. **Do NOT include JavaScript in-line in the page unless there is a good reason**.
+- Name variables and functions logically and in camelCase. Sensible names that are long are preferred to short names that make no sense.
+- Try to write functions to follow the principle that they should do one thing and do it well. If you can see that a function is becoming more complex, abstract it out into multiple functions - it will become more readable, reusable and will make more sense to someone unfamiliar to the code.
+- Prefix jQuery collection variables with the dollar ($) character e.g `$headerChildren`
+- Class declarations should start with a capital letter.
+- Constants or configuration variables should be at the start of a class and written in CAPS.
+
+### JS Structure
+When you're using jQuery as your plugin, please follow this structure:
+
+```javascript
+// good
+$(function(){
+    func(1);
+    func(2);
+});
+
+// bad
+$(function(){
+    func(1);
+});
+$(function(){
+    func(2);
+});
+
+```
 
 ### Debuging
 
