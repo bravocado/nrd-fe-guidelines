@@ -53,8 +53,8 @@ To contribute to this project please follow this step:
     3. [Debuging](#debuging)
     3. [JS Comments](#js-comments)
 7. [Code Distribution](#code-distribution)
-    1. [Using Git](#using-git)
-    2. [Readme File](#readme-file)
+    1. [Readme File](#readme-file)
+    2. [Using Git](#using-git)
 8. [External Tools](#external-tools)
 
 ---
@@ -232,8 +232,8 @@ $(function(){
 
 ### JS Comments
 
-### Using Git
-
 ### Readme File
+
+### Using Git
 
 ### External Tools
