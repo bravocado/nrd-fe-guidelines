@@ -230,6 +230,9 @@ $(function(){
 
 ### Debuging
 
+- We encourage you to add a debug flags when you on development phase.
+- Use `console.log()` not `alert()`.
+
 ### JS Comments
 
 ### Readme File
