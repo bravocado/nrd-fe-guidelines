@@ -185,6 +185,85 @@ nav {}
 
 ### Naming Convention
 
+The following sections describe one simple approach, and as long as the types are defined on a project and the patterns are followed, then a clear meaning can be interpreted fairly quickly and easily reading through the CSS, HTML, and JavaScript.
+
+Every site will have distinct requirements but some examples of things that can be standardized on a site build include:
+
+- Page Level Rules (grids, site template types, and so on)
+- Components
+- State
+- Utilities
+
+The following sections describe how some might work.
+
+#### Page Level Rules
+Any site is liable to have a standard baseline set of grids and types of pages. These grids can be collected into their own distinct set of component files — using a broad definition of a global "thing" as a component.
+
+#### Components
+Components are a high level concept for organizing CSS files and rules. A component simply means a grouped set of rules pertaining to an object or set of related objects on a page.
+
+Additionally, encapsulating these components into distinct files is a great option. Within this file, using a naming convention is a tremendous help here for code maintainability and readability.
+
+Group styles under a simple name-space using a prefix-suffix-modifier type pattern such as:
+
+```css
+/* core component */
+.component { ... }
+
+/* component elements */
+.component-header { ... }
+.component-content { ... }
+
+/* component descendant */
+.component-content-group { ... }
+
+/* component descendant element */
+.component-content-group-header { ... }
+.component-content-group-imgs { ... }
+```
+
+This type of pattern is easy to read, extend, and follow in the absence of something more sophisticated.
+
+Additionally, generally components will be the only CSS class with distinct names that do not have prefixes before the core, root, or base name of the component (e.g. above we are using component).
+
+Just to get developers thinking, these might be things like:
+
+- navbar
+- footer
+- page-info
+- article-date
+- widget
+
+#### State
+A state for an element or component is presentation information for a given component. This may be a dynamic state set by JavaScript or a user interaction, but not always. It could also be a preset from the server or the results after a transaction. State modifiers are a great way for a distinct class to be provided to engineers unfamiliar with the design to be provided hooks for various things. This is slightly different than JS specific classes, however.
+
+State rules will use the `is-` prefix.
+
+```css
+.component-group.is-full { ... } 
+.component-group.is-expired { ... }
+```
+
+Treating components' state as a modifier that is boolean (i.e. true or false) also:
+
+- Semantically helps provide information about the content.
+- Separates the code for state from default presentation.
+- Removes the need to update corresponding states or components if the name of either changes.
+- This last point is important from a maintenance perspective.
+
+It's best to try to restrict these state indicators as being restricted to a specific component.
+
+#### Utility
+A utility is a type of component modifier that is specifically designed to be used on more than one component type. If it was restricted to a single component, it would simply be a modifier.
+
+Utilities will use the prefix of `util-` and should serve only the modifier purpose intended without side effects when applied to any component, or component descendant.
+
+```css
+.util-text-center { ... }
+.util-text-left { ... }
+.util-float-right { ... }
+```
+
 
 ### CSS Comments
 We encourage liberal use of whitespace, comments, and descriptive variable names as appropriate for writing easy-to-read code. You will use automated server-side or other build processes to optimize files (eg: Gulp, Grunt or CodeKit). The ability for another developer to read the code is paramount above other concerns, especially if optimization can be handled another way.
