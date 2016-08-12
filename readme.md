@@ -132,6 +132,17 @@ While the HTML5 specification defines quotes around attributes as optional for c
 ```
 
 ### Performance
+Unless there's a valid reason for loading your scripts before your content, don't block the rendering of your page. If your style sheet is heavy, isolate the styles that are absolutely required initially and defer the loading of the secondary declarations in a separate style sheet. Two HTTP requests is significantly slower than one, but the perception of speed is the most important factor.
+
+```html
+<!doctype html>
+<meta charset="utf-8">
+<title>Hello, world.</title>
+<body>
+    <p>...</p>
+</body>
+<script src="your-script.js"></script>
+```
 
 ### General CSS Principles
 
