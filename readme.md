@@ -26,7 +26,7 @@ This document is not intended to replace common sense, conventions requested by 
 ### Contributing
 To contribute to this project please follow this step:
 
-- clone this repo on draft branch. `git clone -b draft https://github.com/bravocado/nrd-fe-guidelines`
+- clone this repo on draft branch. `git clone -b draft https://bitbucket.org/narrada/nrd-fe-guidelines`
 - create your own branch with the feature that you want to add `user/some-feature`
 - submit your pull request to draft branch
 
@@ -130,7 +130,7 @@ Twitter has its own `<meta>` tags that are similar to the Open Graph protocol, b
 ```html
 <meta name="twitter:title" content="your title goes here">
 <meta name="twitter:description" content="your description here">
-<meta name="twitter:image" content=" http://url.com/image.jpg">
+<meta name="twitter:image" content="http://url.com/image.jpg">
 <meta name="twitter:card" content="summary_large_image">
 ```
 
