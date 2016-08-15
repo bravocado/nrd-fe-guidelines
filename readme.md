@@ -113,7 +113,7 @@ Keep your code terse. Forget about your old XHTML habits.
 All markup should be delivered as UTF-8, as it's the most friendly for internationalization. It should be designated in both the HTTP header and the head of the document.
 
 ```html
-<meta charset=utf-8>
+<meta charset="utf-8">
 ```
 
 ### Open Graph
