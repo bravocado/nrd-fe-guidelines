@@ -25,6 +25,7 @@ This document is not intended to replace common sense, conventions requested by 
 
 ### Contributing
 To contribute to this project please follow this step:
+
 - clone this repo on draft branch. `git clone -b draft https://github.com/bravocado/nrd-fe-guidelines`
 - create your own branch with the feature that you want to add `user/some-feature`
 - submit your pull request to draft branch
