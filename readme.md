@@ -344,7 +344,10 @@ Since we have a private repository, it's a must to use Git for every front-end p
 
 ### External Tools
 
+Here's a list that maybe you need to know to improve your workflow:
+
 - [Git](https://git-scm.com/)
+- [SASS](http://sass-lang.com/)
 - [Gulp](http://gulpjs.com/)
 - [Grunt](http://gruntjs.com/)
 - [CodeKit](https://incident57.com/codekit/)
