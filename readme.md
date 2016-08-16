@@ -362,4 +362,3 @@ Here's a list that maybe you need to know to improve your workflow:
 - [Sublime Text](https://www.sublimetext.com/)
 - [PNGMini](https://pngmini.com/)
 - [Image Optim](https://imageoptim.com/mac)
-- 
