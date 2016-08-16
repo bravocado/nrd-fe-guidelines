@@ -364,26 +364,26 @@ We encourage you to these rules when building a script:
 // Bad
 
 var foo = " ",
-      bar = " ";
+    bar = " ";
 var foobar = " ";
 
 
 // Good
 
-var foo        = " ";
-var bar        = " ";
-var foobaar = " ";
+var foo         = " ";
+var bar         = " ";
+var foobaar     = " ";
 
 // or
 var foo      = " ",
-      bar      = " ",
-      foobar = " ";
+    bar      = " ",
+    foobar   = " ";
 
 // or
 var  // comment goes here
     foo      = " ",
     bar      = " ",
-    foobar = " ";
+    foobar   = " ";
 ```
 
 #### Invoking
