@@ -370,9 +370,9 @@ var foobar = " ";
 
 // Good
 
-var foo         = " ";
-var bar         = " ";
-var foobaar     = " ";
+var foo      = " ";
+var bar      = " ";
+var foobar   = " ";
 
 // or
 var foo      = " ",
