@@ -308,9 +308,7 @@ Use sub-section to identify a small part of your stylesheet
 - Constants or configuration variables should be at the start of a class and written in CAPS.
 
 
-### JS External
-
-A. Load external javascript in a bottom page
+#### Load external JavaScript at the bottom of page
 
 ```html
     
@@ -327,9 +325,9 @@ A. Load external javascript in a bottom page
     </body>
 ```
 
-B. Initialize your external Javascript file
-     - Use other file to wrapping all your initialize file
-     - Don't minify that code, so the programmer can use that initialize file to wrapping his code too
+#### Initialize your external JavaScript file
+     - Use another JavaScript file to fire a functions on external JavaScript file.
+     - Unless you're using automated build system, don't minify that code. So the programmer can use that code too.
 
 ```html 
     
@@ -346,7 +344,7 @@ B. Initialize your external Javascript file
     <script type="text/javascript" src="your/initilize/file"></script>
 
 ```
-e.g Init code
+#### Init code
 
 ```javascript
     $(document).ready(function(){
@@ -357,53 +355,51 @@ e.g Init code
 
 
 ### JS Structure
-Please follow this structure:
 
-A. Assignment
+We encourage you to these rules when building a script:
+
+#### Assignment
 
 ````javascript
-
 // Bad
+
 var foo = " ",
       bar = " ";
 var foobar = " ";
 
 
 // Good
+
 var foo        = " ";
 var bar        = " ";
 var foobaar = " ";
 
 // or
-
 var foo      = " ",
       bar      = " ",
       foobar = " ";
+
 // or
 var  // comment goes here
     foo      = " ",
     bar      = " ",
     foobar = " ";
-
 ```
 
-B. Invoking
+#### Invoking
 
 ````javascript
-
 // good
-
 $(function(){
     func(1);
     func(2);
 });
 
-// bad
 
+// bad
 $(function(){
     func(1);
 });
-
 $(function(){
     func(2);
 });
