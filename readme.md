@@ -360,7 +360,7 @@ We encourage you to these rules when building a script:
 
 #### Assignment
 
-````javascript
+```javascript
 // Bad
 
 var foo = " ",
@@ -388,7 +388,7 @@ var  // comment goes here
 
 #### Invoking
 
-````javascript
+```javascript
 // good
 $(function(){
     func(1);
