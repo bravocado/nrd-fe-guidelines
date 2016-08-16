@@ -356,22 +356,54 @@ e.g Init code
 ```
 
 
-
 ### JS Structure
 Please follow this structure:
 
+A. Assignment
 
-```` Function
+````javascript
+
+// Bad
+var foo = " ",
+      bar = " ";
+var foobar = " ";
+
+
+// Good
+var foo        = " ";
+var bar        = " ";
+var foobaar = " ";
+
+// or
+
+var foo      = " ",
+      bar      = " ",
+      foobar = " ";
+// or
+var  // comment goes here
+    foo      = " ",
+    bar      = " ",
+    foobar = " ";
+
+```
+
+B. Invoking
+
+````javascript
+
 // good
+
 $(function(){
     func(1);
     func(2);
 });
 
 // bad
+
 $(function(){
     func(1);
 });
+
 $(function(){
     func(2);
 });
