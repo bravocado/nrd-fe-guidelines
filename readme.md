@@ -342,7 +342,7 @@ You have to put readme file at the root of your project folder. Use [this](readm
 
 ### Using Git
 
-Since we have a private repository, it's a must to use Git for every front-end project.
+It's a **must** to use Git for every front-end project.
 
 
 ### Image Compression
