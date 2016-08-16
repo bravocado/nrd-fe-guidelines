@@ -307,10 +307,61 @@ Use sub-section to identify a small part of your stylesheet
 - Class declarations should start with a capital letter.
 - Constants or configuration variables should be at the start of a class and written in CAPS.
 
+
+### JS External
+
+A. Load external javascript in a bottom page
+
+```html
+    
+    // Bad
+    <head>
+        <script type="text/javascript" src="your/external/javascript/link"></script>
+        <script type="text/javascript" src="your/external/javascript/link"></script>
+    </head>
+
+    // Good
+    <!-- end of your code -->
+        <script type="text/javascript" src="your/external/javascript/link"></script>
+        <script type="text/javascript" src="your/external/javascript/link"></script>
+    </body>
+```
+
+B. Initialize your external Javascript file
+     - Use other file to wrapping all your initialize file
+     - Don't minify that code, so the programmer can use that initialize file to wrapping his code too
+
+```html 
+    
+    <!-- Bad -->
+    <script type="text/javascript" src="your/external/javascript/link"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+             // initialize code
+        });
+    </script>
+
+    <!-- Good -->
+    <script type="text/javascript" src="your/external/javascript/link"></script>
+    <script type="text/javascript" src="your/initilize/file"></script>
+
+```
+e.g Init code
+
+```javascript
+    $(document).ready(function(){
+        // initialize code
+    });
+
+```
+
+
+
 ### JS Structure
 Please follow this structure:
 
-```javascript
+
+```` Function
 // good
 $(function(){
     func(1);
