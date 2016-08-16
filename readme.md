@@ -347,10 +347,9 @@ Use sub-section to identify a small part of your stylesheet
 #### Init code
 
 ```javascript
-    $(function(){
-        // initialize code
-    });
-
+$(function(){
+    // initialize code
+});
 ```
 
 
