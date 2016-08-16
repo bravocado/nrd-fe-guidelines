@@ -74,7 +74,8 @@ To submit an issue please follow this template:
 7. [Code Distribution](#code-distribution)
     1. [Readme File](#readme-file)
     2. [Using Git](#using-git)
-8. [External Tools](#external-tools)
+8. [Image Compression](#image-compression)
+9. [External Tools](#external-tools)
 
 ---
 
@@ -343,6 +344,12 @@ You have to put readme file at the root of your project folder. Use [this](readm
 
 Since we have a private repository, it's a must to use Git for every front-end project.
 
+
+### Image Compression
+
+All images should be compressed. Any uploaded images from user should compressed by server side (ex: PHP GD library). For client side compression tools, see [below](#external-tools).
+
+
 ### External Tools
 
 Here's a list that maybe you need to know to improve your workflow:
@@ -353,3 +360,6 @@ Here's a list that maybe you need to know to improve your workflow:
 - [Grunt](http://gruntjs.com/)
 - [CodeKit](https://incident57.com/codekit/)
 - [Sublime Text](https://www.sublimetext.com/)
+- [PNGMini](https://pngmini.com/)
+- [Image Optim](https://imageoptim.com/mac)
+- 
