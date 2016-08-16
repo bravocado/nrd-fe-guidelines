@@ -326,8 +326,9 @@ Use sub-section to identify a small part of your stylesheet
 ```
 
 #### Initialize your external JavaScript file
-     - Use another JavaScript file to fire a functions on external JavaScript file.
-     - Unless you're using automated build system, don't minify that code. So the programmer can use that code too.
+
+ - Use another JavaScript file to fire a functions on external JavaScript file.
+ - Unless you're using automated build system, don't minify that code. So the programmer can use that code too.
 
 ```html 
     
@@ -344,6 +345,7 @@ Use sub-section to identify a small part of your stylesheet
     <script type="text/javascript" src="your/initilize/file"></script>
 
 ```
+
 #### Init code
 
 ```javascript
