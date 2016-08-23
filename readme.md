@@ -117,6 +117,17 @@ All markup should be delivered as UTF-8, as it's the most friendly for internati
 <meta charset="utf-8">
 ```
 
+### Responsive Meta Tag
+
+Pages optimized for a variety of devices must include a meta viewport element in the head of the document. A meta viewport tag gives the browser instructions on how to control the page's dimensions and scaling.
+
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1">
+```
+
+Using the meta viewport value width=device-width instructs the page to match the screen’s width in device-independent pixels. This allows the page to reflow content to match different screen sizes, whether rendered on a small mobile phone or a large desktop monitor.
+
+
 ### Open Graph
 The Open Graph protocol enables any web page to become a rich object in a social graph. For instance, this is used on Facebook to allow any web page to have the same functionality as any other object on Facebook.
 To turn your web pages into graph objects, you need to add basic metadata to your page. We've based the initial version of the protocol on RDFa which means that you'll place additional `<meta>` tags in the `<head>` of your web page. The four required properties for every page are:
