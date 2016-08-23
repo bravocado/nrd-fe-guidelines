@@ -323,18 +323,17 @@ Use sub-section to identify a small part of your stylesheet
 #### Load external JavaScript at the bottom of page
 
 ```html
-    
-    // Bad
-    <head>
-        <script type="text/javascript" src="your/external/javascript/link"></script>
-        <script type="text/javascript" src="your/external/javascript/link"></script>
-    </head>
+// Bad
+<head>
+    <script type="text/javascript" src="your/external/javascript/link"></script>
+    <script type="text/javascript" src="your/external/javascript/link"></script>
+</head>
 
-    // Good
-    <!-- end of your code -->
-        <script type="text/javascript" src="your/external/javascript/link"></script>
-        <script type="text/javascript" src="your/external/javascript/link"></script>
-    </body>
+// Good
+<!-- end of your code -->
+    <script type="text/javascript" src="your/external/javascript/link"></script>
+    <script type="text/javascript" src="your/external/javascript/link"></script>
+</body>
 ```
 
 #### Initialize your external JavaScript file
@@ -343,19 +342,17 @@ Use sub-section to identify a small part of your stylesheet
  - Unless you're using automated build system, don't minify that code. So the programmer can use that code too.
 
 ```html 
-    
-    <!-- Bad -->
-    <script type="text/javascript" src="your/external/javascript/link"></script>
-    <script type="text/javascript">
-        $(document).ready(function(){
-             // initialize code
-        });
-    </script>
+<!-- Bad -->
+<script type="text/javascript" src="your/external/javascript/link"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+         // initialize code
+    });
+</script>
 
-    <!-- Good -->
-    <script type="text/javascript" src="your/external/javascript/link"></script>
-    <script type="text/javascript" src="your/initilize/file"></script>
-
+<!-- Good -->
+<script type="text/javascript" src="your/external/javascript/link"></script>
+<script type="text/javascript" src="your/initilize/file"></script>
 ```
 
 #### Init code
