@@ -173,8 +173,8 @@ Unless there's a valid reason for loading your scripts before your content, don'
 <title>Hello, world.</title>
 <body>
     <p>...</p>
-</body>
 <script src="your-script.js"></script>
+</body>
 ```
 
 ### General CSS Principles
